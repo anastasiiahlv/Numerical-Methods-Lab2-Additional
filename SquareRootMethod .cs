@@ -8,10 +8,10 @@ namespace Numerical_Methods_Lab2
 {
     public class SquareRootMethod
     {
-        public double[,] S { get; private set; }
-        public double[,] D { get; private set; }
-        public double[,] A { get; private set; }
-        public double[,] Multiplications { get; private set; }
+        public static double[,] S { get; private set; }
+        public static double[,] D { get; private set; }
+        public static double[,] A { get; private set; }
+        public static double[,] Multiplications { get; private set; }
 
         // ініціалізація
         public SquareRootMethod(double[,] matrix)
@@ -22,7 +22,7 @@ namespace Numerical_Methods_Lab2
             D = new double[n, n];
         }
 
-        // Знаходимо обернену матрицю А^-1
+        // Знаходимо транспоновану матрицю
         public void TransposedMatrix()
         {
             int n = S.GetLength(0);
@@ -70,7 +70,7 @@ namespace Numerical_Methods_Lab2
         }
 
         // Знаходимо вектор y 
-        public double[] YResults(double[] b)
+        public static double[] YResults(double[] b)
         {
             int n = b.Length;
             double[] result = new double[n];
@@ -87,7 +87,7 @@ namespace Numerical_Methods_Lab2
         }
 
         // Знаходимо вектор х - результат системи
-        public double[] XResults(double[] y)
+        public static double[] XResults(double[] y)
         {
             double[,] _S = {
             { Math.Pow(2, 0.5) , 1 / Math.Pow(2, 0.5), -1 / Math.Pow(2, 0.5), 0 },
@@ -157,6 +157,51 @@ namespace Numerical_Methods_Lab2
             }
             return result;
         }
+
+        public static double[,] InverseMatrix()
+        {
+            int n = A.GetLength(0);
+            double[,] inverse = new double[n, n];
+
+            // Одинична матриця
+            double[,] identity = new double[n, n];
+            for (int i = 0; i < n; i++)
+            {
+                identity[i, i] = 1.0;
+            }
+
+            // Шукаємо стовпці оберненої матриці
+            for (int k = 0; k < n; k++)
+            {
+                // Розв'язуємо систему для одиничного стовпця
+                double[] e_k = new double[n];
+                for (int i = 0; i < n; i++)
+                {
+                    e_k[i] = identity[i, k];
+                }
+
+                // Прямий хід з матрицею S
+                double[] y = YResults(e_k);
+
+                // Вирішення системи з діагональною матрицею D
+                for (int i = 0; i < n; i++)
+                {
+                    y[i] /= D[i, i];
+                }
+
+                // Зворотний хід з матрицею S^T
+                double[] x = XResults(y);
+
+                // Записуємо результат як стовпець оберненої матриці
+                for (int i = 0; i < n; i++)
+                {
+                    inverse[i, k] = x[i];
+                }
+            }
+
+            return inverse;
+        }
+
 
         // Виводимо матрицю 
         public static void PrintMatrix(double[,] F)

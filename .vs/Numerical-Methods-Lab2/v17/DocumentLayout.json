@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\univ\\Numerical-Methods-Lab2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D194A8A8-F827-4ACA-8059-77CF5111C281}|Numerical-Methods-Lab2.csproj|c:\\users\\user\\desktop\\univ\\numerical-methods-lab2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D194A8A8-F827-4ACA-8059-77CF5111C281}|Numerical-Methods-Lab2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D194A8A8-F827-4ACA-8059-77CF5111C281}|Numerical-Methods-Lab2.csproj|c:\\users\\user\\desktop\\univ\\numerical-methods-lab2\\vector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D194A8A8-F827-4ACA-8059-77CF5111C281}|Numerical-Methods-Lab2.csproj|solutionrelative:vector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D194A8A8-F827-4ACA-8059-77CF5111C281}|Numerical-Methods-Lab2.csproj|c:\\users\\user\\desktop\\univ\\numerical-methods-lab2\\squarerootmethod .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D194A8A8-F827-4ACA-8059-77CF5111C281}|Numerical-Methods-Lab2.csproj|solutionrelative:squarerootmethod .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D194A8A8-F827-4ACA-8059-77CF5111C281}|Numerical-Methods-Lab2.csproj|c:\\users\\user\\desktop\\univ\\numerical-methods-lab2\\vector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D194A8A8-F827-4ACA-8059-77CF5111C281}|Numerical-Methods-Lab2.csproj|solutionrelative:vector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D194A8A8-F827-4ACA-8059-77CF5111C281}|Numerical-Methods-Lab2.csproj|c:\\users\\user\\desktop\\univ\\numerical-methods-lab2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D194A8A8-F827-4ACA-8059-77CF5111C281}|Numerical-Methods-Lab2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D194A8A8-F827-4ACA-8059-77CF5111C281}|Numerical-Methods-Lab2.csproj|c:\\users\\user\\desktop\\univ\\numerical-methods-lab2\\seidelmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -49,33 +49,33 @@
               "RelativeDocumentMoniker": "SquareRootMethod .cs",
               "ToolTip": "C:\\Users\\USER\\Desktop\\univ\\Numerical-Methods-Lab2\\SquareRootMethod .cs",
               "RelativeToolTip": "SquareRootMethod .cs",
-              "ViewState": "AQIAAI4AAAAAAAAAAAAmwJoAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-05T12:27:57.519Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Vector.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\univ\\Numerical-Methods-Lab2\\Vector.cs",
               "RelativeDocumentMoniker": "Vector.cs",
               "ToolTip": "C:\\Users\\USER\\Desktop\\univ\\Numerical-Methods-Lab2\\Vector.cs",
               "RelativeToolTip": "Vector.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAaAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T17:56:46.704Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\univ\\Numerical-Methods-Lab2\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\USER\\Desktop\\univ\\Numerical-Methods-Lab2\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-03T18:18:49.194Z",
               "EditorCaption": ""

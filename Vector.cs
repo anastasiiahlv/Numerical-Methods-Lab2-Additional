@@ -58,57 +58,6 @@ namespace Numerical_Methods_Lab2
             Console.WriteLine("[" + string.Join(", ", x.elements) + "]");
         }
 
-        // Знаходимо обернену матрицю
-        public static double[,] InvertMatrix(double[,] matrix)
-        {
-            int n = matrix.GetLength(0);
-            double[,] extendedMatrix = new double[n, 2 * n];
-
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < n; j++)
-                {
-                    extendedMatrix[i, j] = matrix[i, j];
-                }
-                extendedMatrix[i, i + n] = 1;
-            }
-
-            for (int i = 0; i < n; i++)
-            {
-                // Знаходимо провідний елемент
-                double conductiveElement = extendedMatrix[i, i];
-                for (int j = 0; j < 2 * n; j++)
-                {
-                    extendedMatrix[i, j] /= conductiveElement;
-                }
-
-                // Зануляємо елементи стовпця
-                for (int j = 0; j < n; j++)
-                {
-                    if (j != i)
-                    {
-                        double factor = extendedMatrix[j, i];
-                        for (int k = 0; k < 2 * n; k++)
-                        {
-                            extendedMatrix[j, k] -= factor * extendedMatrix[i, k];
-                        }
-                    }
-                }
-            }
-
-            // Виділення оберненої матриці
-            double[,] inverseMatrix = new double[n, n];
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < n; j++)
-                {
-                    inverseMatrix[i, j] = extendedMatrix[i, j + n];
-                }
-            }
-
-            return inverseMatrix;
-        }
-
         // Рахуємо число обумовленості
         public static double CalculateConditionNumber(double a, double b)
         {

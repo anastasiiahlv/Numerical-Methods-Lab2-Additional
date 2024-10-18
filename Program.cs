@@ -60,7 +60,7 @@ public class Program
         Console.WriteLine();
 
         Console.WriteLine("Inverse matrix A^(-1): ");
-        double[,] invertMatrix = Vector.InvertMatrix(matrix);
+        double[,] invertMatrix = SquareRootMethod.InverseMatrix();
         SquareRootMethod.PrintMatrix(invertMatrix);
         Console.WriteLine();
 

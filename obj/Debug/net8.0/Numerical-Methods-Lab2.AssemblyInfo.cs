@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Numerical-Methods-Lab2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+410edc5f7cc4601ed91129dcf7d318a6bb724972")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5e347377fd46bac994e8faeeeee0c88dae23907")]
 [assembly: System.Reflection.AssemblyProductAttribute("Numerical-Methods-Lab2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Numerical-Methods-Lab2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
